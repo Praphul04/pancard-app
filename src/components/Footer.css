@@ -1,0 +1,135 @@
+.main-app-footer{
+  background-color: #6c757d;
+}
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 4rem 3rem; /* Increased padding for a more spacious look */
+  display: flex; /* Use flexbox to arrange columns side by side */
+  flex-wrap: wrap; /* Allow columns to wrap to the next line */
+  justify-content: flex-start; /* Align columns to the start */
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.footer-column {
+  flex: 1 1 24%; /* Make columns flexible and allow them to take up 24% of the container */
+  min-width: 281px;
+  max-width: 50%;
+  padding: 1rem; /* Add padding to each column for spacing */
+  border: 1px solid #dee2e6; /* Add border for visual separation */
+  border-radius: 0.25rem; /* Rounded corners for a modern look */
+  background-color: #ffffff; /* White background for each column */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow for depth */
+  margin: 0.5rem 0.5rem 0 0; /* Add margin for spacing between columns */
+  margin-left: 20px;
+}
+
+.footer-column-content {
+  margin-bottom: 1rem;
+}
+
+.footer-column h6 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-column a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: cadetblue;
+  font-size: 10x;
+
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-company {
+  text-align: center;
+  width: 100%; /* Ensure footer-company takes full width */
+  margin-top: 3rem; /* Increased margin for spacing */
+  color: #6c757d;
+}
+
+/* Style for disclaimer text */
+.footer-disclaimer {
+  margin-top: 3rem; /* Spacing from the top */
+}
+
+.footer-disclaimer p {
+  font-size: 0.9rem; /* Font size for disclaimer text */
+  color: #6c757d; /* Lighter color for text */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+/* Style for footer links */
+.footer-links {
+  margin-bottom: 1.5rem; /* Spacing below the links */
+}
+
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  margin: 0 0.75rem; /* Horizontal spacing between links */
+  font-size: 1rem; /* Font size for readability */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Underline on hover for links */
+  color: #ffc107; /* Change color on hover for visual feedback */
+}
+
+/* Style for the footer bottom section */
+.footer-bottom {
+  margin-top: 10px; /* Spacing above the bottom section */
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom .footer-company {
+  font-size: 0.9rem; /* Font size for company text */
+  color: #dee2e6; /* Light gray color for text */
+  margin-top: 8px;
+}
+
+
+/* Back to Top Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 25px; /* Adjust as needed */
+  right: 20px;  /* Adjust as needed */
+  background-color: #007bff; /* Background color of the button */
+  color: #ffffff; /* Icon color */
+  border: none;
+  border-radius: 50%;
+  width: 40px; /* Size of the button */
+  height: 40px; /* Size of the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Size of the icon */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+  transition: background-color 0.3s, opacity 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+.back-to-top:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.back-to-top:active {
+  background-color: #004494; /* Even darker shade when button is clicked */
+}
+
+.back-to-top i {
+  margin: 0;
+}
+
+

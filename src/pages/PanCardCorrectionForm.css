@@ -1,0 +1,173 @@
+/* Add your custom styles here */
+
+/* Container Styles */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Heading Styles */
+.pan-form-heading {
+  margin-top: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: #f9f9f9; /* Default background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.hero.bg-gray {
+  background-color: #f0f0f0;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Label Styling */
+.form-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Input and Select Styling */
+.form-input, .form-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+/* Radio Button Styling */
+.form-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  position: relative;
+  padding-left: 2rem; /* Space for the custom radio button */
+}
+
+.form-radio input[type="radio"] {
+  opacity: 0; /* Hide the default radio button */
+  position: absolute;
+  left: 0;
+}
+
+.radio-custom {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 50%;
+  background-color: white; /* Background color when not selected */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-radio input[type="radio"]:checked + .radio-custom {
+  background-color: #007bff; /* Background color when selected */
+  border-color: #007bff;
+}
+
+.radio-custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white; /* Color of the inner circle */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.form-radio input[type="radio"]:checked + .radio-custom::after {
+  opacity: 1;
+}
+
+/* Checkbox Styling */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+
+/* Utility Classes */
+.show-xs {
+  display: none;
+}
+
+/* Font Size Adjustments */
+.small {
+  font-size: 0.9rem;
+}
+
+.form-input-hint {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.sub-i-b {
+  font-weight: bold;
+}
+
+.bg-gray {
+  background-color: #f1f1f1;
+}
+
+.radio-group {
+  font-size: 14px;
+}
+
+/* Button Styles */
+.btn.btn-primary {
+  display: inline-block;
+  padding: 6px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  outline: none; /* Remove default outline */
+  background-color: #00408a; /* Even darker shade when focused or active */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.btn.btn-primary:disabled {
+  background-color: #6c757d; /* Disabled color */
+  cursor: not-allowed; /* Show not-allowed cursor */
+  opacity: 0.65; /* Reduced opacity for disabled state */
+  box-shadow: none; /* Remove shadow when disabled */
+}

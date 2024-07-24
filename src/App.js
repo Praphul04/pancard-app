@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import DeshBoard from "./components/DeshBoard";
 
-function App() {
+
+
+
+import PanCardApplicationForm from "./pages/PanCardApplicationForm";
+import PanCorrectionForm from "./pages/PanCorrectionForm";
+
+
+
+// Import other components as needed
+
+const App = () => {
+  const isMainComponent = true; // Example condition
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div>
+          <Header />
+          <Routes>
+            <Route path="/" element={<DeshBoard />} />
+            <Route path="apply-new-pan" element={<PanCardApplicationForm showTitle={isMainComponent}/>} />
+            <Route path="/pan-correction" element={<PanCorrectionForm showTitle={isMainComponent}/>} />
+       
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

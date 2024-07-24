@@ -1,0 +1,323 @@
+/* Container Styles */
+.pan-form-heading{
+  margin-top: 20px;
+
+}
+.container.grid-lg {
+  max-width: 1280px;
+  margin-top: 15px;
+}
+/* Header Styles */
+.pan-form-heading {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.main-pan-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section Styles */
+.hero {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.hero.bg-gray {
+  background-color: #f0f0f0;
+}
+
+.hero-body {
+  padding: 15px;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-input,
+.form-select,
+textarea.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-select {
+  height: 40px;
+}
+
+.input-hint-aadhaar-enrollment-receipt {
+  color: #888;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Responsive Columns */
+.columns {/* Container Styles */
+  .pan-form-heading {
+    margin-top: 20px;
+  }
+  
+  .container.grid-lg {
+    max-width: 1280px;
+    margin-top: 15px;
+  }
+  
+  /* Header Styles */
+  .pan-form-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .main-pan-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .hero.bg-gray {
+    background-color: #f0f0f0;
+  }
+  
+  .hero-body {
+    padding: 15px;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-input,
+  .form-select,
+  textarea.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-select {
+    height: 40px;
+  }
+  
+  .input-hint-aadhaar-enrollment-receipt {
+    color: #888;
+  }
+  
+  textarea.form-input {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Responsive Columns */
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    padding: 0 10px;
+  }
+  
+  .column.col-xs-3,
+  .column.col-md-2 {
+    flex: 1 1 25%;
+  }
+  
+  .column.col-xs-5,
+  .column.col-md-3 {
+    flex: 1 1 50%;
+  }
+  
+  .column.col-xs-4,
+  .column.col-md-3 {
+    flex: 1 1 33.333%;
+  }
+  
+  /* Button Styles */
+  .form-group {
+    text-align: center; /* Center the button within the form group */
+    margin-top: 20px; /* Add some spacing above the button */
+  }
+  
+  .btn.btn-primary {
+    display: inline-block;
+    padding: 6px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin-left: auto;
+    background-color: #007bff;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+  }
+  
+  .btn.btn-primary:focus,
+  .btn.btn-primary:active {
+    outline: none; /* Remove default outline */
+    background-color: #00408a; /* Even darker shade when focused or active */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  }
+  
+  .btn.btn-primary:disabled {
+    background-color: #6c757d; /* Disabled color */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    opacity: 0.65; /* Reduced opacity for disabled state */
+    box-shadow: none; /* Remove shadow when disabled */
+  }
+  
+  /* Hide Elements */
+  .hide {
+    display: none;
+  }
+  
+  /* Font Size Adjustments */
+  small {
+    font-size: 0.9rem;
+  }
+  
+  /* Hints for Select Inputs */
+  .form-input-hint {
+    font-size: 0.75rem;
+    color: #666;
+  }
+  
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 0 10px;
+}
+
+
+
+.column.col-xs-3,
+.column.col-md-2 {
+  flex: 1 1 25%;
+}
+
+.column.col-xs-5,
+.column.col-md-3 {
+  flex: 1 1 50%;
+}
+
+.column.col-xs-4,
+.column.col-md-3 {
+  flex: 1 1 33.333%;
+}
+
+/* Button Styles */
+/* Button Styles */
+.form-group {
+  text-align: center; /* Center the button within the form group */
+  margin-top: 20px; /* Add some spacing above the button */
+}
+
+.btn.btn-primary {
+  display: inline-block;
+  padding: 6px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  background-color: #007bff;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  outline: none; /* Remove default outline */
+  background-color: #00408a; /* Even darker shade when focused or active */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.btn.btn-primary:disabled {
+  background-color: #6c757d; /* Disabled color */
+  cursor: not-allowed; /* Show not-allowed cursor */
+  opacity: 0.65; /* Reduced opacity for disabled state */
+  box-shadow: none; /* Remove shadow when disabled */
+}
+
+
+/* Hide Elements */
+.hide {
+  display: none;
+}
+
+/* Font Size Adjustments */
+small {
+  font-size: 0.9rem;
+}
+
+/* Hints for Select Inputs */
+.form-input-hint {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+
