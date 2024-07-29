@@ -1,135 +1,226 @@
-.main-app-footer{
-  background-color: #6c757d;
-}
-.footer-container {
+.main-app-footer {
   background-color: #f8f9fa;
-  padding: 4rem 3rem; /* Increased padding for a more spacious look */
-  display: flex; /* Use flexbox to arrange columns side by side */
-  flex-wrap: wrap; /* Allow columns to wrap to the next line */
-  justify-content: flex-start; /* Align columns to the start */
-  max-width: 1200px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
+  color: #333333;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .footer-column {
-  flex: 1 1 24%; /* Make columns flexible and allow them to take up 24% of the container */
-  min-width: 281px;
-  max-width: 50%;
-  padding: 1rem; /* Add padding to each column for spacing */
-  border: 1px solid #dee2e6; /* Add border for visual separation */
-  border-radius: 0.25rem; /* Rounded corners for a modern look */
-  background-color: #ffffff; /* White background for each column */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow for depth */
-  margin: 0.5rem 0.5rem 0 0; /* Add margin for spacing between columns */
-  margin-left: 20px;
-}
-
-.footer-column-content {
-  margin-bottom: 1rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .footer-column h6 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  position: relative;
+  padding-bottom: 8px;
 }
 
-.footer-column a {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.footer-column h6::after {
+  content: '';
   display: block;
-  margin-bottom: 0.5rem;
-  color: cadetblue;
-  font-size: 10x;
+  width: 50%;
+  height: 2px;
+  background-color: #007bff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
+
+.footer-column a {
+  display: block;
+  color: #555555;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
 }
 
 .footer-column a:hover {
+  color: #004494;
   text-decoration: underline;
+  transform: translateX(3px);
 }
 
-.footer-company {
-  text-align: center;
-  width: 100%; /* Ensure footer-company takes full width */
-  margin-top: 3rem; /* Increased margin for spacing */
-  color: #6c757d;
-}
 
-/* Style for disclaimer text */
 .footer-disclaimer {
-  margin-top: 3rem; /* Spacing from the top */
+  margin-top: 30px;
+  font-size: 0.875rem;
+  color: #666666;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.footer-disclaimer p {
-  font-size: 0.9rem; /* Font size for disclaimer text */
-  color: #6c757d; /* Lighter color for text */
-  line-height: 1.6; /* Line height for better readability */
-}
-
-/* Style for footer links */
 .footer-links {
-  margin-bottom: 1.5rem; /* Spacing below the links */
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .footer-link {
-  text-decoration: none; /* Remove underline */
-  margin: 0 0.75rem; /* Horizontal spacing between links */
-  font-size: 1rem; /* Font size for readability */
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 0.875rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-link:hover {
-  text-decoration: underline; /* Underline on hover for links */
-  color: #ffc107; /* Change color on hover for visual feedback */
+  color: #0056b3;
+  text-decoration: underline;
+  transform: translateY(-2px);
 }
 
-/* Style for the footer bottom section */
-.footer-bottom {
-  margin-top: 10px; /* Spacing above the bottom section */
-  height: 50px;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-bottom .footer-company {
-  font-size: 0.9rem; /* Font size for company text */
-  color: #dee2e6; /* Light gray color for text */
-  margin-top: 8px;
-}
-
-
-/* Back to Top Button Styles */
 .back-to-top {
   position: fixed;
-  bottom: 25px; /* Adjust as needed */
-  right: 20px;  /* Adjust as needed */
-  background-color: #007bff; /* Background color of the button */
-  color: #ffffff; /* Icon color */
+  bottom: 30px;
+  right: 20px;
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
   border-radius: 50%;
-  width: 40px; /* Size of the button */
-  height: 40px; /* Size of the button */
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px; /* Size of the icon */
   cursor: pointer;
-  z-index: 1000; /* Ensure it's above other content */
-  transition: background-color 0.3s, opacity 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
 }
 
 .back-to-top:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
-
-.back-to-top:active {
-  background-color: #004494; /* Even darker shade when button is clicked */
+  background-color: #0056b3;
 }
 
 .back-to-top i {
+  font-size: 1.5rem;
   margin: 0;
 }
 
+.footer-bottom {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #444444;
+}
+.footer-bottom {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #444444;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom-content {
+  max-width: 1000px;
+  width: 90%;
+}
+
+.footer-company {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .footer-column h6 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .footer-link {
+    display: block;
+    margin: 5px 0;
+    font-size: 0.75rem;
+  }
+
+  .footer-links {
+    padding: 15px;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-column h6 {
+    font-size: 0.9rem;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .footer-link {
+    font-size: 0.75rem;
+  }
+
+  .footer-links {
+    padding: 10px;
+  }
+
+  .back-to-top {
+    bottom: 15px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
 

@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.css';
+import { Link } from "react-router-dom";
 const Footer = () => {
 
 
@@ -12,27 +13,26 @@ const Footer = () => {
   return (
 <>
 
-    <footer className="main-app-footer" style={{ backgroundColor: "#e3f2fd",
-  color: "#333333"}}>
+    <footer className="main-app-footer" style={{ backgroundColor: "#e3f2fd", color: "#333333"}}>
     <div className="container footer-container">
         <div className="footer-column">
           <div className="footer-column-content">
             <h6>How to Apply for</h6>
             <div>
-              <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/individual.php">New Individual PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/individual-minor.php">New Minor PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/individual-minor-child.php">Child PAN Card Apply</a>
-              <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/individual-without-aadhaar-otp.php">New PAN without Aadhaar OTP</a>
-              <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/individual-students.php">New PAN Card for Students</a>
+              <Link to="apply-new-pan">New Individual PAN Card</Link>
+              <Link to="/apply-minor-pan">New Minor PAN Card</Link>
+              <Link to="/child-pan-card-application">Child PAN Card Apply</Link>
+              <Link to="/pan-card-without-aadhaar-application">New PAN without Aadhaar OTP</Link>
+              <Link to="/pan-card-for-student">New PAN Card for Students</Link>
             </div>
             <h6 className="mt-2">Apply Changes / Correction in</h6>
             <div>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual.php">Individual PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-name-change-after-marriage.php">Name change after Marriage</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-minor-to-major.php">Minor to Major PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-signature-change.php">PAN Card Signature Change</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-dob-change.php">PAN Card DOB Change</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-amendment.php">PAN Card Amendment</a>
+              <Link to="/pan-correction">Individual PAN Card</Link>
+              <Link to="/pan-changes-marriage">Name change after Marriage</Link>
+              <Link to="/minor-to-major-pan">Minor to Major PAN Card</Link>
+              <Link to="/change-signature-pan">PAN Card Signature Change</Link>
+              <Link to="/change-DOB-pan-card">PAN Card DOB Change</Link>
+              <Link to="/online-pan-card-amendment">PAN Card Amendment</Link>
             </div>
           </div>
         </div>
@@ -40,61 +40,234 @@ const Footer = () => {
           <div className="footer-column-content">
             <h6>Reprint / Reissue PAN Card</h6>
             <div>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-duplicate-pan-card.php">Duplicate PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-reprint-pan-card.php">Reprint PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-lost-pan-card.php">Reprint Lost PAN Card</a>
-              <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-damaged-pan-card.php">Reprint Damaged PAN Card</a>
+              <Link to="/reprint-duplicate-pan">Duplicate PAN Card</Link>
+              <Link to="/reprint-pan-card-application">Reprint PAN Card</Link>
+              <Link to="/reprint-lost-pan">Reprint Lost PAN Card</Link>
+              <Link to="/reprint-damaged-pan">Reprint Damaged PAN Card</Link>
             </div>
             <h6 className="mt-2">Surrender PAN Card</h6>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/surrender/individual-surrender-duplicate-pan-card.php">Surrender Duplicate PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/surrender/individual-cancel-duplicate-pan-card.php">Cancel Duplicate PAN Card</a>
+            <Link to="/surrender-duplicate-pan-application">Surrender Duplicate PAN Card</Link>
+            <Link to="/cancel-duplicate-pan">Cancel Duplicate PAN Card</Link>
             <h6 className="mt-2">After Application links</h6>
             <div>
-              <a href="https://www.pancardapp.com/track-pan-card.php">Track PAN Card</a>
-              <a href="https://www.pancardapp.com/check-pan-aadhaar-link-status.php">Check PAN Aadhaar Link Status</a>
+              <Link to="/track-pan">Track PAN Card</Link>
+              <Link to="/pan-aadhaar-link-status">Check PAN Aadhaar Link Status</Link>
             </div>
           </div>
         </div>
         <div className="footer-column">
           <div className="footer-column-content">
             <h6>Physical PAN Card</h6>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-epan-to-physical-pan-card.php">ePAN to Physical PAN</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-instant-pan-to-physical-pan.php">Instant PAN to Physical PAN</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-physical-pan-card.php">Get Physical PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-epan-to-normal-pan-card.php">ePAN to Normal PAN</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-upgrade-pan-card-design.php">Get SMART PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-pvc-pan-card.php">Get PVC PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-plastic-pan-card.php">Get Plastic PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/individual-pan-card-hard-copy.php">Get PAN Card Hard Copy</a>
+            <Link to="/epan-to-physical-pan">ePAN to Physical PAN</Link>
+            <Link to="/instant-pan">Instant PAN to Physical PAN</Link>
+            <Link to="/physical-pan-card-application">Get Physical PAN Card</Link>
+            <Link to="/e-pan-to-normal-pancard-application">ePAN to Normal PAN</Link>
+            <Link to="/upgrade-smart-pan-with-qr-code-application">Get SMART PAN Card</Link>
+            <Link to="/pvc-pan-card-application-form">Get PVC PAN Card</Link>
+            <Link to="/plastic-pan-card-application">Get Plastic PAN Card</Link>
+            <Link to="/pan-card-hard-copy-application">Get PAN Card Hard Copy</Link>
             <h6 className="mt-2">Below 18 years PAN Card</h6>
-            <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/individual-minor-age-16.php">PAN Card Apply Age 16</a>
+            <Link to="/age-sixteen-pan-card-application">PAN Card Apply Age 16</Link>
           </div>
         </div>
         <div className="footer-column">
           <div className="footer-column-content">
             <h6>Trust</h6>
-            <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/trust.php">New Trust PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/trust/">Trust PAN Card Correction Form</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/trust/duplicate-pan-card.php">Duplicate Trust PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/trust/reprint-pan-card.php">Reprint Trust PAN Card</a>
+            <Link to="/apply-online-new-pan-card-application-form/trust">New Trust PAN Card</Link>
+            <Link to="/trust-pan-card-correction-application">Trust PAN Card Correction Form</Link>
+            <Link to="/duplicate-trust-pan-card-application">Duplicate Trust PAN Card</Link>
+            <Link to="/reprint-trust-pan-card-application">Reprint Trust PAN Card</Link>
           </div>
         </div>
         <div className="footer-column">
           <div className="footer-column-content">
             <h6>Partnership Firm</h6>
-            <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/partnership-firm.php">New Partnership Firm PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/partnership-firm-reprint.php">Reprint Partnership Firm PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/partnership-firm.php">Partnership Firm PAN Card Correction</a>
+            <Link to="/apply-online-new-pan-card-application-form/partnership-firm">
+New Partnership Firm PAN Card
+</Link>
+<Link to="/appliy-for-business-pan-card-application">
+Business PAN Card
+</Link>
+<Link to="/partnership-firm-pan-card-correction-application">
+Partnership Firm PAN Correction
+</Link>
+<Link to="/duplicate-partnership-firm-pan-card-application">
+Duplicate Partnership Firm PAN
+</Link>
+<Link to="/reprint-damage-partnership-firm-pan-card-application">
+Reprint Damaged Partnership Firm PAN
+</Link>
           </div>
         </div>
         <div className="footer-column">
+      
+      <div className="footer-column-content">
+      <h6 >LLP</h6>
+        <Link to="/apply-online-new-pan-card-application-form/limited-liability-partnership-LLP">New LLP PAN Card</Link>
+        <Link to="/llp-pan-card-correction-application">LLP PAN Card Correction Form</Link>
+        <Link to="/duplicate-llp-pan-card-application">Duplicate LLP PAN Card</Link>
+        <Link to="/reprint-llp-pan-card-application">Reprint LLP PAN Card</Link>
+      </div>
+      </div>
+        <div className="footer-column">
           <div className="footer-column-content">
-            <h6>Corporate</h6>
-            <a href="https://www.pancardapp.com/apply-online-new-pan-card-application-form/corporate.php">New Corporate PAN Card</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/corporate.php">Corporate PAN Card Correction</a>
-            <a href="https://www.pancardapp.com/apply-online-pan-card-correction-application-form/corporate/reprint-pan-card.php">Reprint Corporate PAN Card</a>
+            <h6>Co-Operative Society</h6>
+            <Link to="/apply-online-new-pan-card-application-form/aop/co-operative-society">
+New Co-operative Society PAN Card
+</Link>
+<Link to="/co-operative-pan-card-correction-application">
+Co-Operative Society PAN Correction
+</Link>
+<Link to="/duplicate-cooperative-pan-card-application">
+Duplicate Co-Operative Society PAN
+</Link>
+<Link to="/reprint-Co-Operative-pan-card-application">
+Reprint Co-Operative Society PAN
+</Link>
+<Link to="/reprint-lost-Co-Operative-pan-card-application">
+Reprint Lost Co-Operative Society PAN
+</Link>
           </div>
         </div>
+    
+
+        <div className="footer-column">
+        <div className="footer-column-content">
+      <h6 >Housing Society</h6>
+        <Link to="new-pan-application-housing-society">New Housing Society PAN Card</Link>
+        <Link to="/new-pan-correction-housing-society">Housing Society PAN Correction</Link>
+      </div>
+      </div>
+     
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >Welfare Association</h6>
+        <Link to="/new-pan-application-Welfare-association">New Welfare Association PAN Card</Link>
+        <Link to="/new-pan-correction-welfare-association">Welfare Association PAN Correction</Link>
+      </div>
+      </div>
+   
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >Welfare Society</h6>
+        <Link to="/new-pan-application-Welfare-society">New Welfare Society PAN Card</Link>
+        <Link to="/new-pan-correction-welfare-society">Welfare Society PAN Correction</Link>
+        <Link to="/reprint-lost-Welfare-Society-pan-card-application">Reprint Lost Welfare Society PAN</Link>
+      </div>
+      </div>
+     
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >Sanstha</h6>
+      <Link to="/new-pan-application-sanstha">
+New Sanstha PAN Card
+</Link>
+<Link to="/new-pan-correction-welfare-society">
+Sanstha PAN Correction
+</Link>
+<Link to="/reprint-lost-Welfare-Society-pan-card-application">
+Reprint Lost Sanstha PAN
+</Link>
+      </div>
+      </div>
+   
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >Samiti</h6>
+      <Link to="/new-pan-application-Samiti">
+New Samiti PAN Card
+</Link>
+<Link to="/new-pan-correction-welfare-society">
+Samiti PAN Card Correction
+</Link>
+<Link to="/reprint-lost-Welfare-Society-pan-card-application">
+Reprint Lost Samiti PAN
+</Link>
+      </div>
+      </div>
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >Association</h6>
+      <Link to="/new-pan-application-apartment-association">
+New Apartment Association PAN
+</Link>
+<Link to="/new-pan-correction-association">
+Association PAN Correction
+</Link>
+<Link to="/reprint-association-pan-card-application">
+Reprint Association PAN
+</Link>
+<Link to="/reprint-lost-association-pan-card-application">
+Reprint Lost Association PAN
+</Link>
+      </div>
+      </div>
+
+
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >HUF</h6>
+      <Link to="/apply-online-new-pan-card-application-form/hindu-undivided-family-HUF">
+New HUF PAN Card
+</Link>
+<Link to="/HUF-PAN-Card-Correction-Application">
+HUF PAN Correction
+</Link>
+<Link to="/duplicate-huf-pan-card-application">
+Duplicate HUF PAN Card
+</Link>
+<Link to="/reprint-lost-huf-pan-card">
+Reprint Lost HUF PAN
+</Link>
+      </div>
+      </div>
+
+
+      
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >How to Apply for</h6>
+      <Link to="/new-school-pan-card-application">
+New School PAN Card
+</Link>
+<Link to="/new-sangam-pan-card-application">
+New Seva Sangam PAN Card
+</Link>
+<Link to="/new-educational-society-pan-card-application">
+New Educational Society PAN Card
+</Link>
+<Link to="/new-memorial-society-pan-card-application">
+New Memorial Society PAN Card
+</Link>
+<Link to="/new-mandali-pan-card-application">
+New Mandali PAN Card
+</Link>
+<Link to="/new-shg-self-help-group-pan-card-application">
+SHG Self Help Group PAN Card
+</Link>
+<Link to="/new-joint-venture-pan-card-application">
+Joint Venture PAN Card
+</Link>
+<Link to="/new-ngo-pan-card-application">
+NGO PAN Card
+</Link>
+      </div>
+      </div>
+
+      <div className="footer-column">
+      <div className="footer-column-content">
+      <h6 >Apply by Locations</h6>
+      <Link to="/all-india-pan-card-apply-application">
+New PAN: India, States & Cities
+</Link>
+<h6 >More Reads</h6>
+<Link to="/pan-card-speed-post-tracking">PAN Card Speed POST Tracking</Link>
+
+<Link to="https://www.pancardapp.com/blog/reviews/">Reviews</Link>
+      </div>
+      </div>
+
+
       </div>
       <div className="container grid-lg">
       <div className="footer-disclaimer text-center">
@@ -114,30 +287,30 @@ const Footer = () => {
     </p>
   </div>
   <div className="footer-links text-center">
-    <a href="https://www.pancardapp.com/customer-care.php" className="footer-link">Contact Us</a> 
-    <a href="https://www.pancardapp.com/blog/about-us/" className="footer-link">About Us</a> 
-    <a href="https://www.pancardapp.com/blog/terms-conditions/" className="footer-link">Terms & Conditions</a> 
-    <a href="https://www.pancardapp.com/blog/refund-policy/" className="footer-link">Refund Policy</a> 
-    <a href="https://www.pancardapp.com/blog/shipping-delivery-policy/" className="footer-link">Shipping Policy</a> 
-    <a href="https://www.pancardapp.com/blog/disclaimer-policy/" className="footer-link">Disclaimer Policy</a> 
-    <a href="https://www.pancardapp.com/blog/privacy-policy/" className="footer-link">Privacy Policy</a>
+    <Link to="/contect-us-page" className="footer-link">Contact Us</Link> 
+    <Link to="https://www.pancardapp.com/blog/about-us/" className="footer-link">About Us</Link> 
+    <Link to="https://www.pancardapp.com/blog/terms-conditions/" className="footer-link">Terms & Conditions</Link> 
+    <Link to="https://www.pancardapp.com/blog/refund-policy/" className="footer-link">Refund Policy</Link> 
+    <Link to="https://www.pancardapp.com/blog/shipping-delivery-policy/" className="footer-link">Shipping Policy</Link> 
+    <Link to="https://www.pancardapp.com/blog/disclaimer-policy/" className="footer-link">Disclaimer Policy</Link> 
+    <Link to="https://www.pancardapp.com/blog/privacy-policy/" className="footer-link">Privacy Policy</Link>
   </div>
 
 
 
 </div>
 <button className="back-to-top" onClick={scrollToTop}>
-          <i className="fas fa-arrow-circle-up">^</i>
+          <i className="fas fa-arrow-circle-up"></i>
         </button>
-<div className="footer-bottom row">
+
+
+    </footer>
+    <div className="footer-bottom row">
 
 <div className="col-md-12">
   <p className="footer-company">© PANCardApp.com 2024. All Rights reserved</p>
 </div>
 </div>
-
-    </footer>
-  
     </>
   );
 };

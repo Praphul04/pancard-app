@@ -1,44 +1,49 @@
-/* Container Styles */
-.pan-form-heading{
-  margin-top: 20px;
-
+.pan-form-heading {
+  margin-top: 10px;
+  text-align: left;
 }
+
+.pan-form-heading {
+  font-size: 2.5rem;
+  color: #3498db;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  text-align: left;
+}
+
 .container.grid-lg {
   max-width: 1280px;
-  margin-top: 15px;
-}
-/* Header Styles */
-.pan-form-heading {
-  font-size: 2rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Form Styles */
 .main-pan-form {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Hero Section Styles */
 .hero {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .hero.bg-gray {
-  background-color: #f0f0f0;
+  background-color: #ecf0f1;
 }
 
 .hero-body {
   padding: 15px;
 }
 
-/* Form Group Styles */
 .form-group {
   margin-bottom: 20px;
 }
@@ -47,202 +52,144 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #555;
+  color: #34495e;
+  text-align: left;
 }
-
 .form-input,
 .form-select,
 textarea.form-input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 14px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-select {
-  height: 40px;
+.form-input:focus,
+.form-select:focus,
+textarea.form-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.2);
+  outline: none;
 }
 
-.input-hint-aadhaar-enrollment-receipt {
-  color: #888;
+.form-input:hover,
+.form-select:hover,
+textarea.form-input:hover {
+  border-color: #95a5a6;
 }
 
 textarea.form-input {
   resize: vertical;
-  min-height: 100px;
+  min-height: 150px;
+  line-height: 1.5;
 }
 
-/* Responsive Columns */
-.columns {/* Container Styles */
-  .pan-form-heading {
-    margin-top: 20px;
-  }
-  
+.form-input::placeholder,
+.form-select::placeholder {
+  color: #bdc3c7;
+  font-size: 0.9rem;
+}
+
+.form-select {
+  height: 50px;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  appearance: none;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8ZyBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXRpb24td3dpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXRpb24taGVpZ2h0PSIxMCIgc3Ryb2tlLW1pdGVyaW5lLXZhbGluZSIvPgogIDxwYXRoIGQ9Ik00MC4wNjkgMTUwLjdjMCAzMC0yNi42ODQgNTAuMzc4LTUxLjI4NCA1MS4zMzggbDEzLjQzIDYuNDYyYy0xLjM1IDAtMi4zNTYtMC4xMTctMy4wOTggMC4zMjN6Ii8+Cjwvc3ZnPg==');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+@media (max-width: 1200px) {
   .container.grid-lg {
-    max-width: 1280px;
-    margin-top: 15px;
+    max-width: 100%;
+    padding: 0 10px;
   }
-  
-  /* Header Styles */
+
+  .column {
+    flex: 1 1 50%;
+  }
+
   .pan-form-heading {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
   }
-  
-  /* Form Styles */
-  .main-pan-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Hero Section Styles */
-  .hero {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-  }
-  
-  .hero.bg-gray {
-    background-color: #f0f0f0;
-  }
-  
-  .hero-body {
-    padding: 15px;
-  }
-  
-  /* Form Group Styles */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
+
   .form-input,
   .form-select,
   textarea.form-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    font-size: 0.95rem;
   }
-  
-  .form-select {
-    height: 40px;
-  }
-  
-  .input-hint-aadhaar-enrollment-receipt {
-    color: #888;
-  }
-  
-  textarea.form-input {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  /* Responsive Columns */
-  .columns {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .column {
-    padding: 0 10px;
-  }
-  
-  .column.col-xs-3,
-  .column.col-md-2 {
-    flex: 1 1 25%;
-  }
-  
-  .column.col-xs-5,
-  .column.col-md-3 {
-    flex: 1 1 50%;
-  }
-  
-  .column.col-xs-4,
-  .column.col-md-3 {
-    flex: 1 1 33.333%;
-  }
-  
-  /* Button Styles */
+}
+
+@media (max-width: 768px) {
   .form-group {
-    text-align: center; /* Center the button within the form group */
-    margin-top: 20px; /* Add some spacing above the button */
+    margin-bottom: 15px;
   }
-  
+
   .btn.btn-primary {
-    display: inline-block;
-    padding: 6px 24px;
     font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-    margin-left: auto;
-    background-color: #007bff;
-    border: 1px solid black;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 20px;
   }
-  
-  .btn.btn-primary:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+
+  .hero {
+    padding: 10px;
   }
-  
-  .btn.btn-primary:focus,
-  .btn.btn-primary:active {
-    outline: none; /* Remove default outline */
-    background-color: #00408a; /* Even darker shade when focused or active */
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+
+  .pan-form-heading {
+    font-size: 1.8rem;
+    text-align: left;
   }
-  
-  .btn.btn-primary:disabled {
-    background-color: #6c757d; /* Disabled color */
-    cursor: not-allowed; /* Show not-allowed cursor */
-    opacity: 0.65; /* Reduced opacity for disabled state */
-    box-shadow: none; /* Remove shadow when disabled */
+
+  .columns {
+    flex-direction: column;
   }
-  
-  /* Hide Elements */
-  .hide {
-    display: none;
-  }
-  
-  /* Font Size Adjustments */
-  small {
+
+  .form-input,
+  .form-select,
+  textarea.form-input {
     font-size: 0.9rem;
+    padding: 12px 14px;
   }
-  
-  /* Hints for Select Inputs */
-  .form-input-hint {
-    font-size: 0.75rem;
-    color: #666;
+}
+
+@media (max-width: 480px) {
+  .form-input,
+  .form-select,
+  textarea.form-input {
+    font-size: 0.85rem;
+    padding: 10px 12px;
   }
-  
-  
-  
+
+  .btn.btn-primary {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+}
+
+.input-hint-aadhaar-enrollment-receipt {
+  color: #7f8c8d;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.columns {
   display: flex;
   flex-wrap: wrap;
 }
 
 .column {
-  padding: 0 10px;
+  padding: 0 15px;
 }
-
-
 
 .column.col-xs-3,
 .column.col-md-2 {
@@ -259,65 +206,96 @@ textarea.form-input {
   flex: 1 1 33.333%;
 }
 
-/* Button Styles */
-/* Button Styles */
 .form-group {
-  text-align: center; /* Center the button within the form group */
-  margin-top: 20px; /* Add some spacing above the button */
+  text-align: center;
+  margin-top: 30px;
 }
 
 .btn.btn-primary {
   display: inline-block;
-  padding: 6px 24px;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-align: center;
-  color: #fff;
-  margin-left: auto;
-  background-color: #007bff;
-  border: 1px solid black;
+  color: #ffffff;
+  background-color: #2980b9;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn.btn-primary:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+  background-color: #3498db;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn.btn-primary:focus,
 .btn.btn-primary:active {
-  outline: none; /* Remove default outline */
-  background-color: #00408a; /* Even darker shade when focused or active */
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  outline: none;
+  background-color: #1f618d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 .btn.btn-primary:disabled {
-  background-color: #6c757d; /* Disabled color */
-  cursor: not-allowed; /* Show not-allowed cursor */
-  opacity: 0.65; /* Reduced opacity for disabled state */
-  box-shadow: none; /* Remove shadow when disabled */
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
 }
 
-
-/* Hide Elements */
 .hide {
   display: none;
 }
 
-/* Font Size Adjustments */
 small {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: #7f8c8d;
 }
 
-/* Hints for Select Inputs */
 .form-input-hint {
-  font-size: 0.75rem;
-  color: #666;
+  font-size: 0.8rem;
+  color: #7f8c8d;
 }
 
+@media (max-width: 1200px) {
+  .container.grid-lg {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .column {
+    flex: 1 1 50%;
+  }
 
+  .pan-form-heading {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn.btn-primary {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+  
+  .hero {
+    padding: 10px;
+  }
+  
+  .pan-form-heading {
+    font-size: 2rem;
+    text-align: left;
+  }
+  
+  .columns {
+    flex-direction: column;
+  }
+}

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './Header.css';
@@ -67,20 +68,28 @@ const Header = () => {
 
 
   return (
+    <>
     <header
-      className="navbar main-header-navbar"
-      style={{ border: "2px solid #ccc", height: "fixed" }}
+      className="navbar main-header-navbar "
+      style={{
+        border: "2px solid #ccc",
+        height: "60px", // Set a fixed height
+        position: "fixed", // Fixed positioning
+        top: "0", // Stick to the top of the viewport
+        left: "0", // Align with the left edge of the viewport
+        width: "100%", // Full width of the viewport
+        zIndex: "1000", // Ensure it stays above other content
+      }}
     >
      <section className="navbar-section-sidebar">
       <div className="off-canvas">
-        <div className="off-canvas-toggle btn btn-action" id="sidebar-id" onClick={toggleMenu}>
-          <i className={`bi bi-list ${menuActive ? "active" : ""}`}></i>
+        <div className="off-canvas-toggle  btn-action" id="sidebar-id" onClick={toggleMenu}>
+        <i className={`fas fa-bars ${menuActive ? "active" : ""}`}></i>
+
         </div>
 
         <div id="off-canvas-sidebar" className={`off-canvas-sidebar ${menuActive ? "active" : ""}`}>
-          <button className="close-btn" onClick={toggleMenu}>
-            <i className="bi bi-x"></i>
-          </button>
+     
           <div className="sidebar-search-bar" style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>
             <input
               type="text"
@@ -151,7 +160,7 @@ const Header = () => {
         </Link>
       </li>
       <li className="navbar-btn">
-        <Link to="/customer-care" className="nav-btn">
+        <Link to="/contect-us-page" className="nav-btn">
        
           <span>Contact Us</span>
         </Link>
@@ -219,7 +228,39 @@ const Header = () => {
           onChange={handleSearchChangeset}
           className="search-bar"
         />
+
     </header>
+
+
+
+<div className='top-navbar' >
+
+<div className="quick-main-apply-pan-btns-div column-nav mt-15">
+  {[
+    { path: '/apply-new-pan', label: 'Apply for New PAN Card' },
+    { path: '/pan-correction', label: 'Apply for Changes in PAN Card' },
+    { path: '/reprint-duplicate-pan', label: 'Apply for Duplicate PAN Card' },
+    { path: '/minor-to-major-pan', label: 'Minor to Major PAN Card' },
+    { path: '/reprint-lost-pan', label: 'Reprint Lost PAN Card' },
+    { path: '/reprint-damaged-pan', label: 'Reprint Damaged PAN Card' },
+    { path: '/pan-changes-marriage', label: 'PAN Changes after Marriage' },
+    { path: '/epan-to-physical-pan', label: 'ePAN to Physical PAN Card' },
+    { path: '/instant-pan', label: 'Instant PAN to Physical Card' },
+    { path: '/cancel-duplicate-pan', label: 'Cancel/Surrender Duplicate PAN' },
+    { path: '/apply-minor-pan', label: 'Minor PAN Card Apply Online' },
+    { path: '/track-pan', label: 'Track PAN Card Status' },
+  ].map(({ path, label }) => (
+    <div key={path} className="">
+      <Link to={path} className="btn btn-block btn-hover" style={{ textDecoration: 'none' }}>
+        {label}
+      </Link>
+    </div>
+  ))}
+</div>
+
+</div>
+
+</>
   );
 };
 

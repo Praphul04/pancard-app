@@ -31,7 +31,7 @@ const PanCardCorrectionForm = () => {
 
   return (
     <div className="container">
-      <div className="hero bg-gray">
+      <div className="">
         <h1 className="hero-body pan-form-heading">PAN Card Correction Application</h1>
       </div>
       <form className="hero bg-gray" id="change-pan-form" method="POST" action="./" onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ const PanCardCorrectionForm = () => {
         </div>
 
         {/* Correction Choices */}
-        <div className="form-group">
+        <div className="form-correction-group">
           <label className="form-label">Please select/tick the items you want to correct or change in your PAN Card</label>
           <div className="hero bg-gray">
             <div className="hero-body">
@@ -68,8 +68,7 @@ const PanCardCorrectionForm = () => {
                <div className="radio-group">
                  <label className="form-radio">
                    <input type="radio" name="pan-form-radio-name-change-reason" value="minor-name-change" checked={nameChangeReason === 'minor-name-change'} onChange={() => setNameChangeReason('minor-name-change')} />
-                   <span className="radio-custom"></span>
-                   Spelling mistake in Name or <br className="show-xs" /> Change in Name order/sequence
+                   <span className="radio-custom"></span>Spelling mistake in Name or <br className="show-xs" /> Change in Name order/sequence
                  </label>
                  <label className="form-radio">
                    <input type="radio" name="pan-form-radio-name-change-reason" value="major-name-change" checked={nameChangeReason === 'major-name-change'} onChange={() => setNameChangeReason('major-name-change')} />
@@ -149,7 +148,7 @@ const PanCardCorrectionForm = () => {
         </div>
 
         {/* Father's Name Correction */}
-        <div className="form-group">
+        <div className="form-correction-group">
           <div className="hero bg-gray">
             <div className="hero-body">
               <div className="form-group">
@@ -197,7 +196,7 @@ const PanCardCorrectionForm = () => {
         </div>
 
         {/* Date of Birth Correction */}
-        <div className="form-group">
+        <div className="form-correction-group">
           <div className="hero bg-gray">
             <div className="hero-body">
               <div className="form-group">
@@ -240,7 +239,7 @@ const PanCardCorrectionForm = () => {
         </div>
 
         {/* Address Correction */}
-        <div className="form-group">
+        <div className="form-correction-group">
           <div className="hero bg-gray">
             <div className="hero-body">
               <div className="form-group">
@@ -274,7 +273,7 @@ const PanCardCorrectionForm = () => {
         </div>
 
         {/* Photo and Signature Correction */}
-        <div className="form-group">
+        <div className="form-correction-group">
           <div className="hero bg-gray">
             <div className="hero-body">
               <div className="form-group">
